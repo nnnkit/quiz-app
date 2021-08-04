@@ -1,172 +1,64 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+.background-svg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+  display: block;
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-}
-body {
-    line-height: 1.5;
-    font-family: "Inter", sans-serif;
-}
-ol,
-ul {
-    list-style: none;
-}
-blockquote,
-q {
-    quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: "";
-    content: none;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
 }
 
-/* general styling */
-*,
-*::after,
-*::before {
-    box-sizing: border-box;
+#root {
+  min-height: 100vh;
+  position: relative;
+  padding:1rem  0;
+  margin: 0;
 }
-button {
-    cursor: pointer;
-}
-body {
-    line-height: 1.5;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-.container {
-    max-width: 80%;
-    margin: 0 auto;
-}
-.flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.altcampus {
+  padding-top: 1rem;
+  color: lightgreen;
+  letter-spacing: 3px;
+  font-weight: bold;
+  z-index: 10;
 }
 
-.flex-c {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+.altcampus a {
+  font-size: 1.2rem;
+  color: rgb(97, 207, 97);
 }
-.wrap {
-    flex-wrap: wrap;
+.altcampus span {
+  text-transform: lowercase;
+  padding: 0.5rem;
+  background-image: linear-gradient(rgb(97, 207, 97), rgb(97, 207, 97)),
+    linear-gradient(rgb(97, 207, 97), rgb(97, 207, 97)),
+    linear-gradient(rgb(97, 207, 97), rgb(97, 207, 97)),
+    linear-gradient(rgb(97, 207, 97), rgb(97, 207, 97));
+  background-repeat: no-repeat;
+  background-size: 4px 100%, 100% 4px, 4px 70%, 70% 4px,
+    calc(100% - 8px) calc(100% - 8px);
+  background-position: left top, right bottom, right bottom, left top, 4px 4px;
+  border-radius: 3px;
+
+  font-size: 1.4rem;
+  margin-right: 5px;
+}
+.altcampus a:hover {
+  color: lightgreen;
 }
 
+.navbar {
+  background-color: #002233;
+}
 
-#root{
-    max-width: 80%;
-    text-align: center;
-    padding: 3rem 0;
-    margin: 0 auto;
+.quiz {
+
+  margin-top: 3rem;
+  padding: 1rem 0;
+  
+}
+
+.tag:hover {
+  border: 1px solid black;
+  font-weight: bold;
+  cursor: pointer;
 }
