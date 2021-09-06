@@ -18,12 +18,4 @@ You will also see any lint errors in the console.
 https://altquiz.netlify.app/
 
 
-
-
-
-
-
-### Deployment
-
-
-
+## Feel free to fork it, change it or improve it. 
