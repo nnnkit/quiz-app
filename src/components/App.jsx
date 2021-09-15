@@ -4,10 +4,6 @@ import Quiz from "./Quiz";
 import { Switch, Route, Link } from "react-router-dom";
 
 class App extends React.Component {
-  constructor() {
-    super();
-  }
-
   render() {
     return (
       <>
@@ -22,8 +18,8 @@ class App extends React.Component {
           <path
             d="M0 96L192 97L384 77L576 86L768 94L960 68L960 0L768 0L576 0L384 0L192 0L0 0Z"
             fill="#002233"
-            stroke-linecap="square"
-            stroke-linejoin="bevel"
+            strokeLinecap="square"
+            strokeLinejoin="bevel"
           ></path>
         </svg>
         <div className="container">

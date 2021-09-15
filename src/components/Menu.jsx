@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 class Menu extends React.Component {
   constructor(props) {
@@ -31,13 +31,13 @@ class Menu extends React.Component {
         >
           Popular Quizzes
         </div>
-        <div class="columns is-centered is-multiline mx-4 py-6">
+        <div className="columns is-centered is-multiline mx-4 py-6">
           {this.state.categories
             ? this.state.categories.map((category) => {
                 return (
                   <span
                     key={category.id}
-                    class="column is-3 box my-4  py-6 has-background-light has-text-centered mx-4"
+                    className="column is-3 box my-4  py-6 has-background-light has-text-centered mx-4"
                   >
                     <div
                       className="subtitle has-text-dark"

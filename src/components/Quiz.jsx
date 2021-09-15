@@ -1,5 +1,4 @@
 import React from "react";
-import { Switch, Route, Link } from "react-router-dom";
 
 class Quiz extends React.Component {
   constructor(props) {
@@ -202,14 +201,14 @@ class Quiz extends React.Component {
             </table>
           </>
         ) : (
-          <div class="columns is-centered is-multiline mx-4 py-6">
+          <div className="columns is-centered is-multiline mx-4 py-6">
             {this.state.quizId ? (
               <div className="column is-10">
                 <div className="subtitle has-text-success-dark">
                   Question {this.state.currentQuestionIndex + 1}/10{" "}
                 </div>
                 <progress
-                  class="progress is-success is-small"
+                  className="progress is-success is-small"
                   value={(this.state.currentQuestionIndex + 1) * 10}
                   max="100"
                 ></progress>
