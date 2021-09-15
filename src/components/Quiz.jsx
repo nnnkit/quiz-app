@@ -155,7 +155,10 @@ class Quiz extends React.Component {
   render() {
     return (
       <div className="quiz">
-        <div className="title my-5 has-text-dark">
+        <div
+          className="title my-5 pt-4 has-text-dark"
+          style={{ textAlign: "center" }}
+        >
           Category:{" "}
           <span>
             {this.state.quizId ? this.state.quizData[0].category : "loading..."}

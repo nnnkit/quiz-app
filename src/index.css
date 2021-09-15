@@ -5,13 +5,12 @@
   left: 0;
   right: 0;
   display: block;
-
 }
 
 #root {
   min-height: 100vh;
   position: relative;
-  padding:1rem  0;
+  padding: 1rem 0;
   margin: 0;
 }
 .altcampus {
@@ -39,7 +38,7 @@
   background-position: left top, right bottom, right bottom, left top, 4px 4px;
   border-radius: 3px;
 
-  font-size: 1.4rem;
+  font-size: 2rem;
   margin-right: 5px;
 }
 .altcampus a:hover {
@@ -51,10 +50,8 @@
 }
 
 .quiz {
-
   margin-top: 3rem;
   padding: 1rem 0;
-  
 }
 
 .tag:hover {

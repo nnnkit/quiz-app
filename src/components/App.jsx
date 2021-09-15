@@ -27,9 +27,12 @@ class App extends React.Component {
           ></path>
         </svg>
         <div className="container">
-          <div className="altcampus">
+          <div
+            className="altcampus columns is-centered is-multiline mx-4 py-4"
+            style={{ marginTop: "8px" }}
+          >
             <Link to="/">
-              <span> Alt</span>QUIZ
+              <span> quiz</span>App
             </Link>
           </div>
 
@@ -38,7 +41,6 @@ class App extends React.Component {
               <Menu />
             </Route>
             <Route path="/quiz/:id" component={Quiz} />
-
             <Route path="*">
               <NoMatch />
             </Route>

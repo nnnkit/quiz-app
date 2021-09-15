@@ -25,7 +25,12 @@ class Menu extends React.Component {
   render() {
     return (
       <div className="quiz">
-        <div className="title my-5 has-text-info-dark">Popular Quizzes</div>
+        <div
+          className="title my-5 has-text-info-dark"
+          style={{ textAlign: "center" }}
+        >
+          Popular Quizzes
+        </div>
         <div class="columns is-centered is-multiline mx-4 py-6">
           {this.state.categories
             ? this.state.categories.map((category) => {
@@ -34,7 +39,10 @@ class Menu extends React.Component {
                     key={category.id}
                     class="column is-3 box my-4  py-6 has-background-light has-text-centered mx-4"
                   >
-                    <div className="subtitle has-text-dark">
+                    <div
+                      className="subtitle has-text-dark"
+                      style={{ fontSize: "1.75rem" }}
+                    >
                       {category.name}
                     </div>
                     <Link to={`/quiz/${category.id}`}>
